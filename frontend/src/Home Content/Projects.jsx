@@ -39,17 +39,20 @@ function Projects() {
         <section className="projects-section">
             <div className="projects-slider">
                 {projects.map((project, index) => (
-                    <div
-                        key={index}
-                        className="project"
-                        ref={(el) => (projectRefs.current[index] = el)}
-                    >
-                        <div className="project-img-container">
-                            <img className="project-img" src={project.projectImg} alt="Project" />
+                    <div className="project-container">
+                        <div
+                            key={index}
+                            className="project"
+                            ref={(el) => (projectRefs.current[index] = el)}
+                        >
+                            <div className="project-img-container">
+                                <img className="project-img" src={project.projectImg} alt="Project" />
+                            </div>
+                            <div className="project-title-container">
+                                <p className="project-title">{project.projectName}</p>
+                            </div>
                         </div>
-                        <div className="project-title-container">
-                            <p className="project-title">{project.projectName}</p>
-                        </div>
+
                     </div>
                 ))}
             </div>

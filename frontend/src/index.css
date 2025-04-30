@@ -141,8 +141,13 @@ body {
   padding: 20px;
 }
 
+.project-container {
+  display: flex;
+  justify-content: center;
+}
 .project {
   display: flex;
+  justify-content: center;
   width: 600px;
   height: 400px;
   position: relative;
